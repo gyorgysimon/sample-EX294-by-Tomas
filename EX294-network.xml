@@ -1,0 +1,20 @@
+<network>
+  <name>EX294-network</name>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <mac address='52:54:00:8e:3b:50'/>
+  <domain name='hl.local'/>
+  <ip address='10.9.0.33' netmask='255.255.255.248'>
+    <dhcp>
+      <range start='10.9.0.34' end='10.9.0.38'/>
+			<host mac='52:54:00:5d:e1:35' name='ansible2' ip='10.9.0.35'/>
+			<host mac='52:54:00:5d:e1:36' name='ansible3' ip='10.9.0.36'/>
+			<host mac='52:54:00:5d:e1:37' name='ansible4' ip='10.9.0.37'/>
+			<host mac='52:54:00:5d:e1:38' name='ansible5' ip='10.9.0.38'/>
+    </dhcp>
+  </ip>
+</network>
+
